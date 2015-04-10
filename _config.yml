@@ -7,20 +7,18 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            aBailey
+tagline:          'Alistairs GitHub Project Pages'
+description:      'Find me online at <a href="http://cmg.soton.ac.uk/people/ab604/">cmg.soton.ac.uk</a> and <a href="https://github.com/ab604">Github</a>.'
+url:              http://ab604.github.io/
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Alistair Bailey'
+  email:           ab604@soton.ac.uk
 
 paginate:         5
 
-# Custom vars
-version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/ab604/ab604.github.io.git

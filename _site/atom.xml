@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>aBailey</title>
+ <link href="http://ab604.github.io//atom.xml" rel="self"/>
+ <link href="http://ab604.github.io//"/>
+ <updated>2015-04-10T11:08:35+01:00</updated>
+ <id>http://ab604.github.io/</id>
+ <author>
+   <name>Alistair Bailey</name>
+   <email>ab604@soton.ac.uk</email>
+ </author>
+
+ 
+ <entry>
+   <title>Welcome to Alistair's GitHub Project Pages</title>
+   <link href="http://ab604.github.io//2015/04/10/welcome/"/>
+   <updated>2015-04-10T00:00:00+01:00</updated>
+   <id>http://ab604.github.io//2015/04/10/welcome</id>
+   <content type="html">&lt;p&gt;This is a new site, so it&amp;#39;s only got two pages - this one and the one where I scraped data from Google Scholar on Antigen Processing.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m not sure what else will be appearing here yet. It depends what I get up to. &lt;/p&gt;
+
+&lt;p&gt;My official (and rather out of date) University page is over
+at the &lt;a href=&quot;http://cmg.soton.ac.uk/people/ab604/&quot;&gt;Computational Modelling Group&lt;/a&gt; site. &lt;/p&gt;
+
+&lt;p&gt;This site was built using &lt;a href=&quot;http://hyde.getpoole.com/&quot;&gt;Hyde&lt;/a&gt;, a two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
