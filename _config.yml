@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 highlighter:      pygments
+encoding: utf-8
 
 # Permalinks
 permalink:        pretty
@@ -22,3 +23,5 @@ paginate:         5
 
 github:
   repo:           https://github.com/ab604/ab604.github.io.git
+  
+
