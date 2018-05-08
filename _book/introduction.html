@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Characterization of the MHC I immunopeptidome of HaCaT cells</title>
+  <meta name="description" content="This is a report for the ImmunoSense project of the HaCaT peptidome +/- DNCB">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Characterization of the MHC I immunopeptidome of HaCaT cells" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a report for the ImmunoSense project of the HaCaT peptidome +/- DNCB" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Characterization of the MHC I immunopeptidome of HaCaT cells" />
+  
+  <meta name="twitter:description" content="This is a report for the ImmunoSense project of the HaCaT peptidome +/- DNCB" />
+  
+
+<meta name="author" content="Alistair Bailey">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="methods.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a><ul>
+<li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#cell-culture"><i class="fa fa-check"></i><b>2.1</b> Cell culture</a></li>
+<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#hla-typing-of-hacat-cells"><i class="fa fa-check"></i><b>2.2</b> HLA typing of HaCaT cells</a></li>
+<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#immunoaffinity-purification-and-hplc-fractionation"><i class="fa fa-check"></i><b>2.3</b> Immunoaffinity purification and HPLC fractionation</a></li>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#mass-spectrometry"><i class="fa fa-check"></i><b>2.4</b> Mass spectrometry</a></li>
+<li class="chapter" data-level="2.5" data-path="methods.html"><a href="methods.html#data-analysis"><i class="fa fa-check"></i><b>2.5</b> Data analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html"><i class="fa fa-check"></i><b>3</b> Peptidome size and proportions</a><ul>
+<li class="chapter" data-level="3.1" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html#summary-tables"><i class="fa fa-check"></i><b>3.1</b> Summary tables</a></li>
+<li class="chapter" data-level="3.2" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html#histograms"><i class="fa fa-check"></i><b>3.2</b> Histograms</a></li>
+<li class="chapter" data-level="3.3" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html#venn-diagrams"><i class="fa fa-check"></i><b>3.3</b> Venn diagrams</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="peptide-binding-motifs.html"><a href="peptide-binding-motifs.html"><i class="fa fa-check"></i><b>4</b> Peptide binding motifs</a><ul>
+<li class="chapter" data-level="4.1" data-path="peptide-binding-motifs.html"><a href="peptide-binding-motifs.html#clustering-of-peptides"><i class="fa fa-check"></i><b>4.1</b> Clustering of peptides</a></li>
+<li class="chapter" data-level="4.2" data-path="peptide-binding-motifs.html"><a href="peptide-binding-motifs.html#peptide-binding-predictions"><i class="fa fa-check"></i><b>4.2</b> Peptide binding predictions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dncb-modifications.html"><a href="dncb-modifications.html"><i class="fa fa-check"></i><b>5</b> DNCB modifications</a><ul>
+<li class="chapter" data-level="5.1" data-path="dncb-modifications.html"><a href="dncb-modifications.html#identified-modified-peptides"><i class="fa fa-check"></i><b>5.1</b> Identified modified peptides</a></li>
+<li class="chapter" data-level="5.2" data-path="dncb-modifications.html"><a href="dncb-modifications.html#ms-spectra-confirmed-modifications"><i class="fa fa-check"></i><b>5.2</b> MS spectra confirmed modifications</a></li>
+<li class="chapter" data-level="5.3" data-path="dncb-modifications.html"><a href="dncb-modifications.html#putative-mhc-peptide-structures"><i class="fa fa-check"></i><b>5.3</b> Putative MHC-peptide structures</a></li>
+<li class="chapter" data-level="5.4" data-path="dncb-modifications.html"><a href="dncb-modifications.html#peptide-predictions-for-keratin-type-i-cytoskeletal-13"><i class="fa fa-check"></i><b>5.4</b> Peptide predictions for Keratin type I cytoskeletal 13</a></li>
+<li class="chapter" data-level="5.5" data-path="dncb-modifications.html"><a href="dncb-modifications.html#peptide-predictions-for-glutathione-s-transferase-omega-1"><i class="fa fa-check"></i><b>5.5</b> Peptide predictions for Glutathione S-transferase omega-1</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>6</b> Next steps</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Characterization of the MHC I immunopeptidome of HaCaT cells</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>This report details objective 1 of the ImmunoSense project: Characterization of the MHC I immunopeptidome of HaCaT cells <span class="citation">(Boukamp et al. <a href="#ref-boukamp1988">1988</a>)</span> <span class="math inline">\(\pm\)</span> DNCB. The HaCaT cell line is a spontaneously transformed keratinocyte line.</p>
+<p>Here we seek to capture class I major histocompatibility complex molecules (MHC I) presented on the surface of cells. MHC I sample the intracellular proteome in the form of short peptides, predominantly 9 amino acids in length. The collective name for the peptides presented is the immunopeptidome. For a recent summary of MHC I antigen processing and presentation see <span class="citation">(Hateren, Bailey, and Elliott <a href="#ref-hateren2017a">2017</a>)</span>.</p>
+<p>We used HaCaT cells to test two non-exclusive hypotheses:</p>
+<ul>
+<li><p>Sensitiser-modified peptides presented by MHC I directly stimulate the immune system.</p></li>
+<li><p>Sensitiser modification of proteins alters the MHC I presented repertoire of peptides.</p></li>
+</ul>
+<p>2,4-Dinitrochlorobenzene (DNCB) is our model sensitiser. In cell lysates DNCB modifies approximately 0.12% Lys, 0.03% Cys and &lt; 0.03% Tyr, His and Arg <span class="citation">(Parkinson et al. <a href="#ref-parkinson2018">2018</a>)</span>.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:dncb"></span>
+<img src="img/DNCB.png" alt="The structure of 2,4-Dinitrochlorobenzene (DNCB)." width="15%" />
+<p class="caption">
+Figure 1.1: The structure of 2,4-Dinitrochlorobenzene (DNCB).
+</p>
+</div>
+<p>For an overview of immunopeptidomics goals and challenges see this short article: <span class="citation">(Caron et al. <a href="#ref-caron2017">2017</a>)</span>.</p>
+<p>Figure <a href="introduction.html#fig:workflow">1.2</a> shows the immunopeptidome workflow used in the generation of this work.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:workflow"></span>
+<img src="img/mass_spec_summary.png" alt="The immunopeptidome workflow." width="944" />
+<p class="caption">
+Figure 1.2: The immunopeptidome workflow.
+</p>
+</div>
+<p>The following sections detail the <a href="methods.html#methods">methodology</a>, <a href="peptidome-size-and-proportions.html#peptidome-size-and-proportions">summary tables, histograms and venn diagrams</a>, <a href="peptide-binding-motifs.html#peptide-binding-motifs">biochemical properties of the peptidomes</a> and <a href="dncb-modifications.html#dncb-modifications">properties of DNCB modified peptides</a>.</p>
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-boukamp1988">
+<p>Boukamp, P., R. T. Petrussevska, D. Breitkreutz, J. Hornung, A. Markham, and N. E. Fusenig. 1988. “Normal Keratinization in a Spontaneously Immortalized Aneuploid Human Keratinocyte Cell Line.” Journal Article. <em>J Cell Biol</em> 106 (3): 761–71. <a href="http://www.ncbi.nlm.nih.gov/pubmed/2450098" class="uri">http://www.ncbi.nlm.nih.gov/pubmed/2450098</a>.</p>
+</div>
+<div id="ref-hateren2017a">
+<p>Hateren, Andy van, Alistair Bailey, and Tim Elliott. 2017. “Recent Advances in Major Histocompatibility Complex (Mhc) Class I Antigen Presentation: Plastic Mhc Molecules and Tapbpr-Mediated Quality Control.” <em>F1000Research</em> 6: 158. doi:<a href="https://doi.org/10.12688/f1000research.10474.1">10.12688/f1000research.10474.1</a>.</p>
+</div>
+<div id="ref-parkinson2018">
+<p>Parkinson, Erika, Maja Aleksic, Richard Cubberley, Gushinder Kaur-Atwal, Johannes P C Vissers, and Paul Skipp. 2018. “Determination of Protein Haptenation by Chemical Sensitizers Within the Complexity of the Human Skin Proteome.” <em>Toxicological Sciences : An Official Journal of the Society of Toxicology</em> 162 (2): 429–38. doi:<a href="https://doi.org/10.1093/toxsci/kfx265">10.1093/toxsci/kfx265</a>.</p>
+</div>
+<div id="ref-caron2017">
+<p>Caron, Etienne, Ruedi Aebersold, Amir Banaei-Esfahani, Chloe Chong, and Michal Bassani-Sternberg. 2017. “A Case for a Human Immuno-Peptidome Project Consortium.” <em>Immunity</em> 47 (2): 203–8. doi:<a href="https://doi.org/10.1016/j.immuni.2017.07.010">10.1016/j.immuni.2017.07.010</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
