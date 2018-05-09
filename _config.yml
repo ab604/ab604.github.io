@@ -25,3 +25,5 @@ github:
   repo:           https://github.com/ab604/ab604.github.io.git
   
 
+
+theme: jekyll-theme-cayman
