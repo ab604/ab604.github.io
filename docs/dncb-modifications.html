@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Characterization of the MHC I immunopeptidome of HaCaT cells</title>
+  <meta name="description" content="This is a report for the ImmunoSense project of the HaCaT peptidome +/- DNCB">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Characterization of the MHC I immunopeptidome of HaCaT cells" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a report for the ImmunoSense project of the HaCaT peptidome +/- DNCB" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Characterization of the MHC I immunopeptidome of HaCaT cells" />
+  
+  <meta name="twitter:description" content="This is a report for the ImmunoSense project of the HaCaT peptidome +/- DNCB" />
+  
+
+<meta name="author" content="Alistair Bailey">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="peptide-binding-motifs.html">
+<link rel="next" href="next-steps.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a><ul>
+<li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#cell-culture"><i class="fa fa-check"></i><b>2.1</b> Cell culture</a></li>
+<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#hla-typing-of-hacat-cells"><i class="fa fa-check"></i><b>2.2</b> HLA typing of HaCaT cells</a></li>
+<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#immunoaffinity-purification-and-hplc-fractionation"><i class="fa fa-check"></i><b>2.3</b> Immunoaffinity purification and HPLC fractionation</a></li>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#mass-spectrometry"><i class="fa fa-check"></i><b>2.4</b> Mass spectrometry</a></li>
+<li class="chapter" data-level="2.5" data-path="methods.html"><a href="methods.html#data-analysis"><i class="fa fa-check"></i><b>2.5</b> Data analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html"><i class="fa fa-check"></i><b>3</b> Peptidome size and proportions</a><ul>
+<li class="chapter" data-level="3.1" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html#summary-tables"><i class="fa fa-check"></i><b>3.1</b> Summary tables</a></li>
+<li class="chapter" data-level="3.2" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html#histograms"><i class="fa fa-check"></i><b>3.2</b> Histograms</a></li>
+<li class="chapter" data-level="3.3" data-path="peptidome-size-and-proportions.html"><a href="peptidome-size-and-proportions.html#venn-diagrams"><i class="fa fa-check"></i><b>3.3</b> Venn diagrams</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="peptide-binding-motifs.html"><a href="peptide-binding-motifs.html"><i class="fa fa-check"></i><b>4</b> Peptide binding motifs</a><ul>
+<li class="chapter" data-level="4.1" data-path="peptide-binding-motifs.html"><a href="peptide-binding-motifs.html#clustering-of-peptides"><i class="fa fa-check"></i><b>4.1</b> Clustering of peptides</a></li>
+<li class="chapter" data-level="4.2" data-path="peptide-binding-motifs.html"><a href="peptide-binding-motifs.html#peptide-binding-predictions"><i class="fa fa-check"></i><b>4.2</b> Peptide binding predictions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dncb-modifications.html"><a href="dncb-modifications.html"><i class="fa fa-check"></i><b>5</b> DNCB modifications</a><ul>
+<li class="chapter" data-level="5.1" data-path="dncb-modifications.html"><a href="dncb-modifications.html#identified-modified-peptides"><i class="fa fa-check"></i><b>5.1</b> Identified modified peptides</a></li>
+<li class="chapter" data-level="5.2" data-path="dncb-modifications.html"><a href="dncb-modifications.html#ms-spectra-confirmed-modifications"><i class="fa fa-check"></i><b>5.2</b> MS spectra confirmed modifications</a></li>
+<li class="chapter" data-level="5.3" data-path="dncb-modifications.html"><a href="dncb-modifications.html#putative-mhc-peptide-structures"><i class="fa fa-check"></i><b>5.3</b> Putative MHC-peptide structures</a></li>
+<li class="chapter" data-level="5.4" data-path="dncb-modifications.html"><a href="dncb-modifications.html#peptide-predictions-for-keratin-type-i-cytoskeletal-13"><i class="fa fa-check"></i><b>5.4</b> Peptide predictions for Keratin type I cytoskeletal 13</a></li>
+<li class="chapter" data-level="5.5" data-path="dncb-modifications.html"><a href="dncb-modifications.html#peptide-predictions-for-glutathione-s-transferase-omega-1"><i class="fa fa-check"></i><b>5.5</b> Peptide predictions for Glutathione S-transferase omega-1</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>6</b> Next steps</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Characterization of the MHC I immunopeptidome of HaCaT cells</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dncb-modifications" class="section level1">
+<h1><span class="header-section-number">5</span> DNCB modifications</h1>
+<p>As noted in <a href="methods.html#cell-culture">Section 2.1</a> one HaCaT population was treated with a 10 <span class="math inline">\(\mu\)</span>M 2,4-Dinitrochlorobenzene (DNCB) mixture of DNCB and DNCB-DNCB-D<sub>3</sub> for 24 hours.</p>
+<p>Searches were performed for DNCB (166.00 Da) and then for any peptide identified the corresponding DNCB-DNCB-D<sub>3</sub> peak in the mass spectrum was used to exclude false positive identifications.</p>
+<div id="identified-modified-peptides" class="section level2">
+<h2><span class="header-section-number">5.1</span> Identified modified peptides</h2>
+<p>Table <a href="dncb-modifications.html#tab:dncb-mods">5.1</a> shows that two peptides, one 9mer and one 10mer were observed in two biological replicates and multiple technical replicates.</p>
+<table>
+<caption><span id="tab:dncb-mods">Table 5.1: </span>DNCB modified peptides</caption>
+<thead>
+<tr class="header">
+<th align="left">Peptide</th>
+<th align="right">Length</th>
+<th align="left">Replicate</th>
+<th align="left">UNIPROT ID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">AETEC(+166.00)RYAL</td>
+<td align="right">9</td>
+<td align="left">DNCB 1A</td>
+<td align="left">P13646</td>
+</tr>
+<tr class="even">
+<td align="left">RFC(+166.00)PFAERTR</td>
+<td align="right">10</td>
+<td align="left">DNCB 1A</td>
+<td align="left">P78417</td>
+</tr>
+<tr class="odd">
+<td align="left">RFC(+166.00)PFAERTR</td>
+<td align="right">10</td>
+<td align="left">DNCB 1B</td>
+<td align="left">P78417</td>
+</tr>
+<tr class="even">
+<td align="left">AETEC(+166.00)RYAL</td>
+<td align="right">9</td>
+<td align="left">DNCB 1B</td>
+<td align="left">P13646</td>
+</tr>
+<tr class="odd">
+<td align="left">AETEC(+166.00)RYAL</td>
+<td align="right">9</td>
+<td align="left">DNCB 3A</td>
+<td align="left">P13646</td>
+</tr>
+<tr class="even">
+<td align="left">RFC(+166.00)PFAERTR</td>
+<td align="right">10</td>
+<td align="left">DNCB 3A</td>
+<td align="left">P78417</td>
+</tr>
+<tr class="odd">
+<td align="left">AETEC(+166.00)RYAL</td>
+<td align="right">9</td>
+<td align="left">DNCB 3B</td>
+<td align="left">P13646</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ms-spectra-confirmed-modifications" class="section level2">
+<h2><span class="header-section-number">5.2</span> MS spectra confirmed modifications</h2>
+<p>Figure <a href="dncb-modifications.html#fig:kera-scan">5.1</a> show the MS spectra for the Keratin, type I cytoskeletal 13 9mer peptide AETECRYAL with a cysteine modification. The unmodified peptide mass to charge ratio m/z = 611.25. The peptide was doubly charged meaning we expect the DNCB-DNCB-D<sub>3</sub> modified peptide peak at 3/2 = 1.5 m/z unit higher, 611.75.</p>
+<p>Ideally the DNCB-DNCB-D<sub>3</sub> modified peptide should have the same intensity as the DNCB modified peptide, but the difference is likely as result of unequal concentrations of the two forms of DNCB in the treatment.</p>
+<p>This peptide was identified by <a href="peptide-binding-motifs.html#clustering-of-peptides">GibbsCluster</a> as binding to HLA-A*40:01 and confirmed using netMHC.</p>
+
+
+<div class="figure" style="text-align: center"><span id="fig:kera-scan"></span>
+<img src="_main_files/figure-html/kera-scan-1.png" alt="Keratin, type I cytoskeletal 13 survey scans" width="672" />
+<p class="caption">
+Figure 5.1: Keratin, type I cytoskeletal 13 survey scans
+</p>
+</div>
+<p>Figure <a href="dncb-modifications.html#fig:glut-scan">5.2</a> show the MS spectra for the Glutathione S-transferase omega-1 10mer peptide RFCPFAERTR, also with a cysteine modification. The unmodified peptide mass to charge ratio m/z = 483.55. The peptide was triply charged meaning we expect the DNCB-DNCB-D<sub>3</sub> modified peptide peak at 3/3 = 1 m/z unit higher, 484.55.</p>
+<p>This peptide was identified by <a href="peptide-binding-motifs.html#clustering-of-peptides">GibbsCluster</a> as binding to HLA-A*31:01 and confirmed using netMHC.</p>
+<p>Glutathione S-transferase omega-1 is important for detoxification of cells <span class="citation">(Spriggs et al. <a href="#ref-spriggs2016">2016</a>, <span class="citation">Jacquoilleot et al. (<a href="#ref-jacquoilleot2015">2015</a>)</span>)</span>, and therefore this particular observation may also be indicative of the mechanism of DNCB sensitisation.</p>
+<div class="figure" style="text-align: center"><span id="fig:glut-scan"></span>
+<img src="_main_files/figure-html/glut-scan-1.png" alt="Glutathione S-transferase omega-1 survey scans" width="672" />
+<p class="caption">
+Figure 5.2: Glutathione S-transferase omega-1 survey scans
+</p>
+</div>
+</div>
+<div id="putative-mhc-peptide-structures" class="section level2">
+<h2><span class="header-section-number">5.3</span> Putative MHC-peptide structures</h2>
+<p>To test whether these modifications were likely to be visible to T-cell receptors, I created putative structures of the DNCB modified peptides using <a href="https://www.cgl.ucsf.edu/chimera/">USCF Chimera</a> <span class="citation">(Pettersen et al. <a href="#ref-pettersen2004">2004</a>)</span>.</p>
+<p>Figure <a href="dncb-modifications.html#fig:keratin-mhc">5.3</a> shows the DNCB modified cysteine AETEC(+DNP)RYAL from Keratin, type I cytoskeletal 13 is solvent exposed and oriented toward TCR interaction.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:keratin-mhc"></span>
+<img src="img/b40_keratin_dnp_top_2.png" alt="Putative structure of HLA-B*40:01 with 9mer AETEC(+DNP)RYAL" width="100%" />
+<p class="caption">
+Figure 5.3: Putative structure of HLA-B*40:01 with 9mer AETEC(+DNP)RYAL
+</p>
+</div>
+<p>Figure <a href="dncb-modifications.html#fig:glut-mhc">5.4</a> shows that the modified cysteine in the 10mer RFC(+DNP)PFAERTR derived from Glutathione S-transferase omega-1 and bound to HLA-A*31:01 is less clearly exposed, but could still interact with a TCR.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:glut-mhc"></span>
+<img src="img/a31_glut_dnp_top.png" alt="Putative structure of HLA-A*31:01 with 10mer RFC(+DNP)PFAERTR" width="100%" />
+<p class="caption">
+Figure 5.4: Putative structure of HLA-A*31:01 with 10mer RFC(+DNP)PFAERTR
+</p>
+</div>
+<p>Interestingly, the RFC(+DNP)PFAERTR peptide derives from the active site of Glutathione S-transferase omega-1, highlighted in Figure <a href="dncb-modifications.html#fig:glut-omg">5.5</a></p>
+
+<div class="figure" style="text-align: center"><span id="fig:glut-omg"></span>
+<img src="img/glut_transferase.png" alt="Glutathione S-transferase omega-1. The glutathione ligand is shown in red, with the active site cysteine that is modified by DNCB highlighted in green." width="100%" />
+<p class="caption">
+Figure 5.5: Glutathione S-transferase omega-1. The glutathione ligand is shown in red, with the active site cysteine that is modified by DNCB highlighted in green.
+</p>
+</div>
+</div>
+<div id="peptide-predictions-for-keratin-type-i-cytoskeletal-13" class="section level2">
+<h2><span class="header-section-number">5.4</span> Peptide predictions for Keratin type I cytoskeletal 13</h2>
+<p>To check for the possibility of other DNCB modified peptides from Keratin type I cytoskeletal 13, I used netMHC to find 9mer and 10mer peptides from the full protein sequences with C, K, Y or H in solvent exposed positions 3 to 8 of the peptide.</p>
+<p>HLA-A*31:01, HLA-B*40:01 and HLA-B*51:01 have frequencies in the English population of about <a href="http://www.allelefrequencies.net/hla6006a.asp?hla_locus_type=Classical&amp;hla_locus=&amp;hla_allele1=A*31%3A01&amp;hla_allele2=A*31%3A01&amp;hla_selection=&amp;hla_pop_selection=&amp;hla_population=&amp;hla_country=England&amp;hla_dataset=&amp;hla_region=&amp;hla_ethnic=&amp;hla_study=&amp;hla_order=order_1&amp;hla_sample_size_pattern=equal&amp;hla_sample_size=&amp;hla_sample_year_pattern=equal&amp;hla_sample_year=&amp;hla_level_pattern=equal&amp;hla_level=&amp;standard=a&amp;hla_show=">6%</a>, <a href="http://www.allelefrequencies.net/hla6006a.asp?hla_locus_type=Classical&amp;hla_locus=&amp;hla_allele1=A*31%3A01&amp;hla_allele2=A*31%3A01&amp;hla_selection=&amp;hla_pop_selection=&amp;hla_population=&amp;hla_country=England&amp;hla_dataset=&amp;hla_region=&amp;hla_ethnic=&amp;hla_study=&amp;hla_order=order_1&amp;hla_sample_size_pattern=equal&amp;hla_sample_size=&amp;hla_sample_year_pattern=equal&amp;hla_sample_year=&amp;hla_level_pattern=equal&amp;hla_level=&amp;standard=a&amp;hla_show=">11%</a> and <a href="http://www.allelefrequencies.net/hla6006a.asp?hla_locus_type=Classical&amp;hla_locus=&amp;hla_allele1=B*51%3A01&amp;hla_allele2=B*51%3A01&amp;hla_selection=&amp;hla_pop_selection=&amp;hla_population=&amp;hla_country=England&amp;hla_dataset=&amp;hla_region=&amp;hla_ethnic=&amp;hla_study=&amp;hla_order=order_1&amp;hla_sample_size_pattern=equal&amp;hla_sample_size=&amp;hla_sample_year_pattern=equal&amp;hla_sample_year=&amp;hla_level_pattern=equal&amp;hla_level=&amp;standard=a&amp;hla_show=">9%</a> respectively. Whereas for HLA-A*02:01 the frequency is approximately <a href="http://www.allelefrequencies.net/hla6006a.asp?hla_locus_type=Classical&amp;hla_locus=&amp;hla_allele1=A*02%3A01&amp;hla_allele2=A*02%3A01&amp;hla_selection=&amp;hla_pop_selection=&amp;hla_population=&amp;hla_country=England&amp;hla_dataset=&amp;hla_region=&amp;hla_ethnic=&amp;hla_study=&amp;hla_order=order_1&amp;hla_sample_size_pattern=equal&amp;hla_sample_size=&amp;hla_sample_year_pattern=equal&amp;hla_sample_year=&amp;hla_level_pattern=equal&amp;hla_level=&amp;standard=a&amp;hla_show=">50%</a>.</p>
+<p>Therefore I also used netMHC to predict peptides that would bind to HLA-A*02:01 that could be synthesised and modified for immunological testing, and in advance of the generation of HaCaT A2 transfected peptidome identification.</p>
+<p>Table <a href="dncb-modifications.html#tab:ker-peps">5.2</a> shows a list of the predicted binders for these with potential for DNCB modification deriving from Keratin type I cytoskeletal 13.</p>
+<table>
+<caption><span id="tab:ker-peps">Table 5.2: </span>NetMHC predicted Keratin type I cytoskeletal 13 peptides</caption>
+<thead>
+<tr class="header">
+<th align="left">Peptide</th>
+<th align="right">Length</th>
+<th align="left">Allotype</th>
+<th align="right">Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">RLASYLEKV</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">0.090</td>
+</tr>
+<tr class="even">
+<td align="left">SLNEELAYM</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">0.300</td>
+</tr>
+<tr class="odd">
+<td align="left">MLLDIKTRL</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">0.175</td>
+</tr>
+<tr class="even">
+<td align="left">DRLASYLEKV</td>
+<td align="right">10</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">0.900</td>
+</tr>
+<tr class="odd">
+<td align="left">RLKYENELAL</td>
+<td align="right">10</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">1.100</td>
+</tr>
+<tr class="even">
+<td align="left">KMLLDIKTRL</td>
+<td align="right">10</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">1.700</td>
+</tr>
+<tr class="odd">
+<td align="left">RGVSTCSTR</td>
+<td align="right">9</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.600</td>
+</tr>
+<tr class="even">
+<td align="left">YYKTIEELR</td>
+<td align="right">9</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.600</td>
+</tr>
+<tr class="odd">
+<td align="left">KMLLDIKTR</td>
+<td align="right">9</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.900</td>
+</tr>
+<tr class="even">
+<td align="left">RLASYLEKVR</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">1.000</td>
+</tr>
+<tr class="odd">
+<td align="left">REQYEAMAER</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.800</td>
+</tr>
+<tr class="even">
+<td align="left">TSKTEITELR</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">1.500</td>
+</tr>
+<tr class="odd">
+<td align="left">NEKITMQNL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.400</td>
+</tr>
+<tr class="even">
+<td align="left">IEELRDKIL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.400</td>
+</tr>
+<tr class="odd">
+<td align="left">REQYEAMAE</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.100</td>
+</tr>
+<tr class="even">
+<td align="left">AEEWFHTKS</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.500</td>
+</tr>
+<tr class="odd">
+<td align="left">AETECRYAL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.015</td>
+</tr>
+<tr class="even">
+<td align="left">TECRYALQL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.150</td>
+</tr>
+<tr class="odd">
+<td align="left">QEYKMLLDI</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.800</td>
+</tr>
+<tr class="even">
+<td align="left">QEIATYRSL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.050</td>
+</tr>
+<tr class="odd">
+<td align="left">GNEKITMQNL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.200</td>
+</tr>
+<tr class="even">
+<td align="left">LEVKIRDWHL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.700</td>
+</tr>
+<tr class="odd">
+<td align="left">AEMREQYEAM</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.400</td>
+</tr>
+<tr class="even">
+<td align="left">AEEWFHTKSA</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.600</td>
+</tr>
+<tr class="odd">
+<td align="left">VAETECRYAL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.300</td>
+</tr>
+<tr class="even">
+<td align="left">AETECRYALQ</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.600</td>
+</tr>
+<tr class="odd">
+<td align="left">ETECRYALQL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.200</td>
+</tr>
+<tr class="even">
+<td align="left">EQEIATYRSL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.500</td>
+</tr>
+<tr class="odd">
+<td align="left">QEIATYRSLL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.250</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="peptide-predictions-for-glutathione-s-transferase-omega-1" class="section level2">
+<h2><span class="header-section-number">5.5</span> Peptide predictions for Glutathione S-transferase omega-1</h2>
+<p>As for Keratin type I cytoskeletal 13, I did the same thing for Glutathione S-transferase omega-1.</p>
+<p>Table <a href="dncb-modifications.html#tab:gst-peps">5.3</a> shows a list of the predicted binders for these with potential for DNCB modification deriving from Glutathione S-transferase omega-1 and binding to HLA-A*31:01, A*02:01, B*40:01 and B*51:01.</p>
+<table>
+<caption><span id="tab:gst-peps">Table 5.3: </span>NetMHC predicted Glutathione S-transferase omega-1 peptides</caption>
+<thead>
+<tr class="header">
+<th align="left">Peptide</th>
+<th align="right">Length</th>
+<th align="left">Allotype</th>
+<th align="right">Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">YSMRFCPFA</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">0.70</td>
+</tr>
+<tr class="even">
+<td align="left">MILELFSKV</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">0.15</td>
+</tr>
+<tr class="odd">
+<td align="left">ELFSKVPSL</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">1.20</td>
+</tr>
+<tr class="even">
+<td align="left">SISMIDYLI</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">1.70</td>
+</tr>
+<tr class="odd">
+<td align="left">SMIDYLIWP</td>
+<td align="right">9</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">1.50</td>
+</tr>
+<tr class="even">
+<td align="left">LELFSKVPSL</td>
+<td align="right">10</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">0.60</td>
+</tr>
+<tr class="odd">
+<td align="left">ELFSKVPSLV</td>
+<td align="right">10</td>
+<td align="left">HLA-A*02:01</td>
+<td align="right">2.00</td>
+</tr>
+<tr class="even">
+<td align="left">GSIRIYSMR</td>
+<td align="right">9</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.20</td>
+</tr>
+<tr class="odd">
+<td align="left">MRFCPFAER</td>
+<td align="right">9</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.90</td>
+</tr>
+<tr class="even">
+<td align="left">RTRLVLKAK</td>
+<td align="right">9</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="odd">
+<td align="left">KNKPEWFFK</td>
+<td align="right">9</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.40</td>
+</tr>
+<tr class="even">
+<td align="left">EGSIRIYSMR</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">1.10</td>
+</tr>
+<tr class="odd">
+<td align="left">SMRFCPFAER</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.09</td>
+</tr>
+<tr class="even">
+<td align="left">RFCPFAERTR</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.40</td>
+</tr>
+<tr class="odd">
+<td align="left">KNKPEWFFKK</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">0.60</td>
+</tr>
+<tr class="even">
+<td align="left">KLKLWMAAMK</td>
+<td align="right">10</td>
+<td align="left">HLA-A*31:01</td>
+<td align="right">1.00</td>
+</tr>
+<tr class="odd">
+<td align="left">GQLIYESAI</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.90</td>
+</tr>
+<tr class="even">
+<td align="left">KEDYAGLKE</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.40</td>
+</tr>
+<tr class="odd">
+<td align="left">KEFTKLEEV</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.80</td>
+</tr>
+<tr class="even">
+<td align="left">FERLEAMKL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="odd">
+<td align="left">SEKDWQGFL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.90</td>
+</tr>
+<tr class="even">
+<td align="left">YESAITCEYL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.15</td>
+</tr>
+<tr class="odd">
+<td align="left">LDEAYPGKKL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.50</td>
+</tr>
+<tr class="even">
+<td align="left">YEKACQKMIL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.20</td>
+</tr>
+<tr class="odd">
+<td align="left">LELFSKVPSL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.25</td>
+</tr>
+<tr class="even">
+<td align="left">EEFRKEFTKL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.00</td>
+</tr>
+<tr class="odd">
+<td align="left">RKEFTKLEEV</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">1.20</td>
+</tr>
+<tr class="even">
+<td align="left">KEFTKLEEVL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="odd">
+<td align="left">NECVDHTPKL</td>
+<td align="right">10</td>
+<td align="left">HLA-B*40:01</td>
+<td align="right">0.80</td>
+</tr>
+<tr class="even">
+<td align="left">EAYPGKKLL</td>
+<td align="right">9</td>
+<td align="left">HLA-B*51:01</td>
+<td align="right">2.00</td>
+</tr>
+<tr class="odd">
+<td align="left">MILELFSKV</td>
+<td align="right">9</td>
+<td align="left">HLA-B*51:01</td>
+<td align="right">1.00</td>
+</tr>
+<tr class="even">
+<td align="left">DPYEKACQKM</td>
+<td align="right">10</td>
+<td align="left">HLA-B*51:01</td>
+<td align="right">1.20</td>
+</tr>
+<tr class="odd">
+<td align="left">MAAMKEDPTV</td>
+<td align="right">10</td>
+<td align="left">HLA-B*51:01</td>
+<td align="right">0.60</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-spriggs2016">
+<p>Spriggs, Sandrine, David Sheffield, Adedamola Olayanju, Neil R Kitteringham, Dean J Naisbitt, and Maja Aleksic. 2016. “Effect of Repeated Daily Dosing with 2,4-Dinitrochlorobenzene on Glutathione Biosynthesis and Nrf2 Activation in Reconstructed Human Epidermis.” <em>Toxicological Sciences : An Official Journal of the Society of Toxicology</em> 154 (1): 5–15. doi:<a href="https://doi.org/10.1093/toxsci/kfw140">10.1093/toxsci/kfw140</a>.</p>
+</div>
+<div id="ref-jacquoilleot2015">
+<p>Jacquoilleot, Sandrine, David Sheffield, Adedamola Olayanju, Rowena Sison-Young, Neil R Kitteringham, Dean J Naisbitt, and Maja Aleksic. 2015. “Glutathione Metabolism in the Hacat Cell Line as a Model for the Detoxification of the Model Sensitisers 2,4-Dinitrohalobenzenes in Human Skin.” <em>Toxicology Letters</em> 237 (1): 11–20. doi:<a href="https://doi.org/10.1016/j.toxlet.2015.05.016">10.1016/j.toxlet.2015.05.016</a>.</p>
+</div>
+<div id="ref-pettersen2004">
+<p>Pettersen, E. F., T. D. Goddard, C. C. Huang, G. S. Couch, D. M. Greenblatt, E. C. Meng, and T. E. Ferrin. 2004. “UCSF Chimera - a Visualization System for Exploratory Research and Analysis.” Journal Article. <em>Journal of Computational Chemistry</em> 25 (13): 1605–12. doi:<a href="https://doi.org/Doi 10.1002/Jcc.20084">Doi 10.1002/Jcc.20084</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="peptide-binding-motifs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="next-steps.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
