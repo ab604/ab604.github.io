@@ -102,7 +102,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#requirements"><i class="fa fa-check"></i>Requirements</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
-<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-are-r-and-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#environments"><i class="fa fa-check"></i><b>1.1.1</b> Environments</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#why-learn-r-or-any-language"><i class="fa fa-check"></i><b>1.2</b> Why learn R, or any language ?</a></li>
@@ -179,11 +179,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1 class="title">Data Science Workshop</h1>
 <h3 class="subtitle"><em>British Society for Proteomic Research Meeting 2018</em></h3>
 <h4 class="author"><em>Alistair Bailey</em></h4>
-<h4 class="date"><em>June 22 2018</em></h4>
+<h4 class="date"><em>June 27 2018</em></h4>
 </div>
 <div id="overview" class="section level1 unnumbered">
 <h1>Overview</h1>
-<p>These lessons cover:</p>
+<p>This book covers:</p>
 <ol style="list-style-type: decimal">
 <li>An introduction to R and RStudio</li>
 <li>An introduction to tidyverse and base R</li>
@@ -193,7 +193,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>The analysis is of an example data set of observations for 7702 proteins from cells in three control experiments and three treatment experiments. The observations are signal intensity measurements from the mass spectrometer. These intensities relate the concentration of protein observed in each experiment and under each condition. The analysis transforms the data to examine the effect of treatment on the cellular proteome and visualise the output using a volcano plot and a heatmap. <a href="https://raw.githubusercontent.com/ab604/ab604.github.io/master/docs/070718-proteomics-example-data.csv" download>Click here to download the csv file.</a></p>
 <div id="requirements" class="section level2 unnumbered">
 <h2>Requirements</h2>
-<p>An up to date version of R <span class="citation">(R Core Team <a href="#ref-R-base">2018</a>)</span> and Rstudio <span class="citation">(RStudio Team <a href="#ref-rstudioteam2018">2018</a>)</span>. These materials were generated using R version 3.5.0.</p>
+<p>An up to date version of R <span class="citation">(R Core Team <a href="#ref-R-base">2018</a>)</span> and RStudio <span class="citation">(RStudio Team <a href="#ref-rstudioteam2018">2018</a>)</span>.</p>
+<p>If you are new to R, then the first thing to know is that R is a programming language and RStudio is a program for working with R called an integrated development environment (IDE). You can use R without RStudio, but not the other way around. Further details in Chapter <a href="intro.html#r-rstudio">1.1</a>.</p>
+<p><a href="https://cran.r-project.org/">Download R here</a> and <a href="https://www.rstudio.com/products/rstudio/download/">Download RStudio Desktop here</a>.</p>
+<p>These materials were generated using R version 3.5.0.</p>
 <p>The following R packages:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;tidyverse&quot;</span>,<span class="st">&quot;gplots&quot;</span>,<span class="st">&quot;pheatmap&quot;</span>))</code></pre></div>
 
