@@ -3387,7 +3387,7 @@ t_{diff} = {h^2\over 8D}
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>((<span class="dv">1</span> <span class="sc">-</span> w_taylor) <span class="sc">*</span> p_conv <span class="sc">+</span> w_taylor <span class="sc">*</span> p_taylor)</span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Case C: Long length - Taylor dispersion dominates</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="co"># In this regime, the distribution is Gaussian with center at tau</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="co"># In this regime, the distribution is Gaussian with centre at tau</span></span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    sigma <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> D_eff <span class="sc">*</span> tau) <span class="sc">/</span> v_avg</span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>((<span class="dv">1</span> <span class="sc">/</span> (sigma <span class="sc">*</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> pi))) <span class="sc">*</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.5</span> <span class="sc">*</span> ((age <span class="sc">-</span> tau) <span class="sc">/</span> sigma)<span class="sc">^</span><span class="dv">2</span>))</span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  }</span>
@@ -3540,8 +3540,8 @@ Table 1: Summary statistics for circular channel
 
     <script>
 
-      function styleCell_mo0a4fbkf2ihcaaxz88v(i, j, css_id) {
-          var table = document.getElementById("tinytable_mo0a4fbkf2ihcaaxz88v");
+      function styleCell_m6j76mc1pmfb5a1bhuvo(i, j, css_id) {
+          var table = document.getElementById("tinytable_m6j76mc1pmfb5a1bhuvo");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -3551,7 +3551,7 @@ Table 1: Summary statistics for circular channel
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_mo0a4fbkf2ihcaaxz88v');
+        var table = document.getElementById('tinytable_m6j76mc1pmfb5a1bhuvo');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -3559,8 +3559,8 @@ Table 1: Summary statistics for circular channel
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_mo0a4fbkf2ihcaaxz88v(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_mo0a4fbkf2ihcaaxz88v");
+      function spanCell_m6j76mc1pmfb5a1bhuvo(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_m6j76mc1pmfb5a1bhuvo");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -3590,14 +3590,14 @@ Table 1: Summary statistics for circular channel
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_lcw9utssjfuz9fka55oc',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_jb6q99vbe120fbvmfiel',}, 
+          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_dve713j4uqsexfnulrvu',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_5zeck57uq5825rjy41py',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_mo0a4fbkf2ihcaaxz88v(cell.i, cell.j, group.css_id);
+                  styleCell_m6j76mc1pmfb5a1bhuvo(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -3605,11 +3605,11 @@ Table 1: Summary statistics for circular channel
 
     <style>
 
-.table td.tinytable_css_lcw9utssjfuz9fka55oc, .table th.tinytable_css_lcw9utssjfuz9fka55oc { border-bottom: solid #d3d8dc 0.1em; }
-.table td.tinytable_css_jb6q99vbe120fbvmfiel, .table th.tinytable_css_jb6q99vbe120fbvmfiel { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+.table td.tinytable_css_dve713j4uqsexfnulrvu, .table th.tinytable_css_dve713j4uqsexfnulrvu { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_5zeck57uq5825rjy41py, .table th.tinytable_css_5zeck57uq5825rjy41py { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
 </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_mo0a4fbkf2ihcaaxz88v" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_m6j76mc1pmfb5a1bhuvo" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -3725,8 +3725,8 @@ Table 2: Summary statistics for rectangular channel
 
     <script>
 
-      function styleCell_hi19a661c2n0fh4dtwrz(i, j, css_id) {
-          var table = document.getElementById("tinytable_hi19a661c2n0fh4dtwrz");
+      function styleCell_gl83xr1xz3j62ipwtxqa(i, j, css_id) {
+          var table = document.getElementById("tinytable_gl83xr1xz3j62ipwtxqa");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -3736,7 +3736,7 @@ Table 2: Summary statistics for rectangular channel
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_hi19a661c2n0fh4dtwrz');
+        var table = document.getElementById('tinytable_gl83xr1xz3j62ipwtxqa');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -3744,8 +3744,8 @@ Table 2: Summary statistics for rectangular channel
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_hi19a661c2n0fh4dtwrz(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_hi19a661c2n0fh4dtwrz");
+      function spanCell_gl83xr1xz3j62ipwtxqa(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_gl83xr1xz3j62ipwtxqa");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -3775,14 +3775,14 @@ Table 2: Summary statistics for rectangular channel
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_yx2tha562abdjrudz6v1',}, 
-          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_bqh24ezuca7oxvv0qkdn',}, 
+          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_lt44tbzkzugl77hfqba7',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_3iohdso7t0n9k5jqgk4j',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_hi19a661c2n0fh4dtwrz(cell.i, cell.j, group.css_id);
+                  styleCell_gl83xr1xz3j62ipwtxqa(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -3790,11 +3790,11 @@ Table 2: Summary statistics for rectangular channel
 
     <style>
 
-.table td.tinytable_css_yx2tha562abdjrudz6v1, .table th.tinytable_css_yx2tha562abdjrudz6v1 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
-.table td.tinytable_css_bqh24ezuca7oxvv0qkdn, .table th.tinytable_css_bqh24ezuca7oxvv0qkdn { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_lt44tbzkzugl77hfqba7, .table th.tinytable_css_lt44tbzkzugl77hfqba7 { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_3iohdso7t0n9k5jqgk4j, .table th.tinytable_css_3iohdso7t0n9k5jqgk4j { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
 </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_hi19a661c2n0fh4dtwrz" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_gl83xr1xz3j62ipwtxqa" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -3909,8 +3909,8 @@ Table 3: Summary statistics for rectangular channel with D = 1e-10
 
     <script>
 
-      function styleCell_7i0wrfzu145jvqikyv6u(i, j, css_id) {
-          var table = document.getElementById("tinytable_7i0wrfzu145jvqikyv6u");
+      function styleCell_0vw4d3xdwvanttnzdx1l(i, j, css_id) {
+          var table = document.getElementById("tinytable_0vw4d3xdwvanttnzdx1l");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -3920,7 +3920,7 @@ Table 3: Summary statistics for rectangular channel with D = 1e-10
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_7i0wrfzu145jvqikyv6u');
+        var table = document.getElementById('tinytable_0vw4d3xdwvanttnzdx1l');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -3928,8 +3928,8 @@ Table 3: Summary statistics for rectangular channel with D = 1e-10
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_7i0wrfzu145jvqikyv6u(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_7i0wrfzu145jvqikyv6u");
+      function spanCell_0vw4d3xdwvanttnzdx1l(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_0vw4d3xdwvanttnzdx1l");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -3959,14 +3959,14 @@ Table 3: Summary statistics for rectangular channel with D = 1e-10
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_zehnqhlt812uc2mkv6pv',}, 
-          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_5gdewglxzd5bbkz9cvw8',}, 
+          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_xcgzv8s8g2tv5fr9yp6c',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_1hjd65ehuq8y27i36fk0',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_7i0wrfzu145jvqikyv6u(cell.i, cell.j, group.css_id);
+                  styleCell_0vw4d3xdwvanttnzdx1l(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -3974,11 +3974,11 @@ Table 3: Summary statistics for rectangular channel with D = 1e-10
 
     <style>
 
-.table td.tinytable_css_zehnqhlt812uc2mkv6pv, .table th.tinytable_css_zehnqhlt812uc2mkv6pv { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
-.table td.tinytable_css_5gdewglxzd5bbkz9cvw8, .table th.tinytable_css_5gdewglxzd5bbkz9cvw8 { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_xcgzv8s8g2tv5fr9yp6c, .table th.tinytable_css_xcgzv8s8g2tv5fr9yp6c { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_1hjd65ehuq8y27i36fk0, .table th.tinytable_css_1hjd65ehuq8y27i36fk0 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
 </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_7i0wrfzu145jvqikyv6u" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_0vw4d3xdwvanttnzdx1l" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -4093,8 +4093,8 @@ Table 4: Summary statistics for rectangular channel with D = 1e-10 with tau to 
 
     <script>
 
-      function styleCell_hd0rrf8l7jpr2i57uhwy(i, j, css_id) {
-          var table = document.getElementById("tinytable_hd0rrf8l7jpr2i57uhwy");
+      function styleCell_vtn7r0p10vyu3cykg5jc(i, j, css_id) {
+          var table = document.getElementById("tinytable_vtn7r0p10vyu3cykg5jc");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -4104,7 +4104,7 @@ Table 4: Summary statistics for rectangular channel with D = 1e-10 with tau to 
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_hd0rrf8l7jpr2i57uhwy');
+        var table = document.getElementById('tinytable_vtn7r0p10vyu3cykg5jc');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -4112,8 +4112,8 @@ Table 4: Summary statistics for rectangular channel with D = 1e-10 with tau to 
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_hd0rrf8l7jpr2i57uhwy(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_hd0rrf8l7jpr2i57uhwy");
+      function spanCell_vtn7r0p10vyu3cykg5jc(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_vtn7r0p10vyu3cykg5jc");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -4143,14 +4143,14 @@ Table 4: Summary statistics for rectangular channel with D = 1e-10 with tau to 
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_7sp8f1jk5e0882vwwn44',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_3b0ofrn1yubdwxnvsv91',}, 
+          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_innat4r8a8drnufan3wg',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_gi3jqtqerzbf2ra2fdjl',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_hd0rrf8l7jpr2i57uhwy(cell.i, cell.j, group.css_id);
+                  styleCell_vtn7r0p10vyu3cykg5jc(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -4158,11 +4158,11 @@ Table 4: Summary statistics for rectangular channel with D = 1e-10 with tau to 
 
     <style>
 
-.table td.tinytable_css_7sp8f1jk5e0882vwwn44, .table th.tinytable_css_7sp8f1jk5e0882vwwn44 { border-bottom: solid #d3d8dc 0.1em; }
-.table td.tinytable_css_3b0ofrn1yubdwxnvsv91, .table th.tinytable_css_3b0ofrn1yubdwxnvsv91 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+.table td.tinytable_css_innat4r8a8drnufan3wg, .table th.tinytable_css_innat4r8a8drnufan3wg { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_gi3jqtqerzbf2ra2fdjl, .table th.tinytable_css_gi3jqtqerzbf2ra2fdjl { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
 </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_hd0rrf8l7jpr2i57uhwy" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_vtn7r0p10vyu3cykg5jc" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -4267,8 +4267,8 @@ Table 5: Summary statistics for rectangular channel with D = 1e-10, v = 0.5 m/s
 
     <script>
 
-      function styleCell_phqhn0mluywsdhjaz624(i, j, css_id) {
-          var table = document.getElementById("tinytable_phqhn0mluywsdhjaz624");
+      function styleCell_c2jp1oifieg95qjovqke(i, j, css_id) {
+          var table = document.getElementById("tinytable_c2jp1oifieg95qjovqke");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -4278,7 +4278,7 @@ Table 5: Summary statistics for rectangular channel with D = 1e-10, v = 0.5 m/s
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_phqhn0mluywsdhjaz624');
+        var table = document.getElementById('tinytable_c2jp1oifieg95qjovqke');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -4286,8 +4286,8 @@ Table 5: Summary statistics for rectangular channel with D = 1e-10, v = 0.5 m/s
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_phqhn0mluywsdhjaz624(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_phqhn0mluywsdhjaz624");
+      function spanCell_c2jp1oifieg95qjovqke(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_c2jp1oifieg95qjovqke");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -4317,14 +4317,14 @@ Table 5: Summary statistics for rectangular channel with D = 1e-10, v = 0.5 m/s
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_ktfwh2sfjiw6o4ts06l9',}, 
-          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_kiycpjj9v40ug9htp7ka',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_qv9q6l7dfqayg9w2932y',}, 
+          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 },  ], css_id: 'tinytable_css_b5hgy30r5v5qt3251lu8',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_phqhn0mluywsdhjaz624(cell.i, cell.j, group.css_id);
+                  styleCell_c2jp1oifieg95qjovqke(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -4332,11 +4332,11 @@ Table 5: Summary statistics for rectangular channel with D = 1e-10, v = 0.5 m/s
 
     <style>
 
-.table td.tinytable_css_ktfwh2sfjiw6o4ts06l9, .table th.tinytable_css_ktfwh2sfjiw6o4ts06l9 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
-.table td.tinytable_css_kiycpjj9v40ug9htp7ka, .table th.tinytable_css_kiycpjj9v40ug9htp7ka { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_qv9q6l7dfqayg9w2932y, .table th.tinytable_css_qv9q6l7dfqayg9w2932y { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+.table td.tinytable_css_b5hgy30r5v5qt3251lu8, .table th.tinytable_css_b5hgy30r5v5qt3251lu8 { border-bottom: solid #d3d8dc 0.1em; }
 </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_phqhn0mluywsdhjaz624" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_c2jp1oifieg95qjovqke" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
